@@ -1,0 +1,9 @@
+velluscinum buildWallet mercado
+
+velluscinum walletBalance http://testchain.chon.group:9984 2eRFEQRq9vNqdPZi9tKyg115RGvhgyjuah9EgNDWHmp7 D34qTAJzjau1U6BxcUauKqNiYyLNKTcKNMtUnQBz9rjV
+
+velluscinum buildAsset mercadoCoin "name:mercadoCoin;decription:criptocurrency"
+
+velluscinum deployToken "http://testchain.chon.group:9984" 2eRFEQRq9vNqdPZi9tKyg115RGvhgyjuah9EgNDWHmp7 D34qTAJzjau1U6BxcUauKqNiYyLNKTcKNMtUnQBz9rjV mercadoCoin.asset 100000
+
+velluscinum walletBalance http://testchain.chon.group:9984 2eRFEQRq9vNqdPZi9tKyg115RGvhgyjuah9EgNDWHmp7 D34qTAJzjau1U6BxcUauKqNiYyLNKTcKNMtUnQBz9rjV
