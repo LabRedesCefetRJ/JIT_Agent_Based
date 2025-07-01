@@ -1,0 +1,7 @@
+MAS raulFornecedor {
+	infrastructure: Centralised
+	agents:
+		fornecedor agentArchClass Communicator;
+	aslSourcePath:
+		"asl";
+}

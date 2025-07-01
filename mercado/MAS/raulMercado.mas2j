@@ -1,0 +1,9 @@
+MAS raulMercado {
+	infrastructure: Centralised
+	agents:
+		agentePedido agentArchClass Communicator;
+		agenteEstoque agentArchClass jason.Argo;
+		agenteCaixa agentArchClass jason.Argo;
+	aslSourcePath:
+		"asl";
+}

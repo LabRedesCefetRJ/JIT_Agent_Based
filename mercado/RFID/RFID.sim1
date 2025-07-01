@@ -1,0 +1,131 @@
+<circuit version="1.1.0-SR1" rev="2069" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="false" Show_Val="false" Pos="424,800" rotation="-270" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="firmware.hex" Auto_Load="false" saveEepr="true" MainMcu="false" SerialMon="-1" />
+</item>
+
+<item itemtype="SerialPort" CircId="SerialPort-2" mainComp="false" Show_id="true" Show_Val="false" Pos="636,864" rotation="-270" hflip="1" vflip="1" label="Computer USBPort" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Auto="true" Port="/dev/ttyExogenous1" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
+
+<item itemtype="Image" CircId="Image-7" mainComp="false" Show_id="false" Show_Val="false" Pos="288,900" rotation="0" hflip="1" vflip="1" label="Image-7" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="150 _px" V_size="125 _px" Border="2 _px" Z_Value="104" Color="#a0a0a4" Opacity="1" Image_File=".imgs/RDM6300.png" />
+
+<item itemtype="Subcircuit" CircId="Nano-8" mainComp="false" Show_id="true" Show_Val="false" Pos="256,812" rotation="90" hflip="1" vflip="1" label="Input Reader" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0">
+<mainCompProps MainCompId="m328 TQFP-269" Frequency="16 MHz" Program="RDM6300RF_module_emulator.hex" Auto_Load="false" saveEepr="true" MainMcu="false" SerialMon="-1" />
+</item>
+
+<item itemtype="Push" CircId="Push-10" mainComp="false" Show_id="true" Show_Val="false" Pos="244,968" rotation="0" hflip="1" vflip="1" label="tagC" idLabPos="-10.5169,20.5506" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Push" CircId="Push-11" mainComp="false" Show_id="true" Show_Val="false" Pos="296,968" rotation="0" hflip="1" vflip="1" label="tagB" idLabPos="-7.77528,21.236" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Push" CircId="Push-12" mainComp="false" Show_id="true" Show_Val="false" Pos="352,968" rotation="0" hflip="1" vflip="1" label="tagA" idLabPos="-9.14607,21.9213" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="AudioOut" CircId="AudioOut-38" mainComp="false" Show_id="false" Show_Val="false" Pos="560,904" rotation="0" hflip="1" vflip="1" label="AudioOut-38" idLabPos="-20,-36" labelrot="0" valLabPos="-16,20" valLabRot="0" Buzzer="true" Impedance="8 Ω" Frequency="1 kHz" />
+
+<item itemtype="Image" CircId="Image-39" mainComp="false" Show_id="false" Show_Val="false" Pos="216,1000" rotation="0" hflip="1" vflip="1" label="Image-39" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="32 _px" V_size="32 _px" Border="0 _px" Z_Value="-1" Color="#a0a0a4" Opacity="0" Image_File=".imgs/rfid-tags.png" />
+
+<item itemtype="Image" CircId="Image-40" mainComp="false" Show_id="false" Show_Val="false" Pos="432,928" rotation="0" hflip="1" vflip="1" label="Image-40" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="32 _px" V_size="32 _px" Border="0 _px" Z_Value="-1" Color="#a0a0a4" Opacity="0" Image_File=".imgs/rfid-tags.png" />
+
+<item itemtype="Image" CircId="Image-41" mainComp="false" Show_id="false" Show_Val="false" Pos="272,1000" rotation="0" hflip="1" vflip="1" label="Image-41" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="32 _px" V_size="32 _px" Border="0 _px" Z_Value="-1" Color="#a0a0a4" Opacity="0" Image_File=".imgs/rfid-tags.png" />
+
+<item itemtype="Image" CircId="Image-42" mainComp="false" Show_id="false" Show_Val="false" Pos="328,1000" rotation="0" hflip="1" vflip="1" label="Image-42" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="32 _px" V_size="32 _px" Border="0 _px" Z_Value="-1" Color="#a0a0a4" Opacity="0" Image_File=".imgs/rfid-tags.png" />
+
+<item itemtype="TextComponent" CircId="TextComponent-43" mainComp="false" Show_id="false" Show_Val="false" Pos="-220,748" rotation="0" hflip="1" vflip="1" label="TextComponent-43" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="10 _px" Fixed_Width="false" Text="INPUT" />
+
+<item itemtype="Subcircuit" CircId="Uno-44" mainComp="false" Show_id="false" Show_Val="false" Pos="-80,808" rotation="-270" hflip="1" vflip="1" label="Uno-44" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="firmware.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Push" CircId="Push-45" mainComp="false" Show_id="true" Show_Val="false" Pos="-208,976" rotation="0" hflip="1" vflip="1" label="tagB" idLabPos="-7.77528,21.236" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="SerialPort" CircId="SerialPort-47" mainComp="false" Show_id="true" Show_Val="false" Pos="132,872" rotation="-270" hflip="1" vflip="1" label="Computer USBPort" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Auto="true" Port="/dev/ttyExogenous0" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
+
+<item itemtype="Image" CircId="Image-48" mainComp="false" Show_id="false" Show_Val="false" Pos="-232,1008" rotation="0" hflip="1" vflip="1" label="Image-48" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="32 _px" V_size="32 _px" Border="0 _px" Z_Value="-1" Color="#a0a0a4" Opacity="0" Image_File=".imgs/rfid-tags.png" />
+
+<item itemtype="Image" CircId="Image-49" mainComp="false" Show_id="false" Show_Val="false" Pos="-216,908" rotation="0" hflip="1" vflip="1" label="Image-49" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="150 _px" V_size="125 _px" Border="2 _px" Z_Value="104" Color="#a0a0a4" Opacity="1" Image_File=".imgs/RDM6300.png" />
+
+<item itemtype="Image" CircId="Image-50" mainComp="false" Show_id="false" Show_Val="false" Pos="-72,936" rotation="0" hflip="1" vflip="1" label="Image-50" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="32 _px" V_size="32 _px" Border="0 _px" Z_Value="-1" Color="#a0a0a4" Opacity="0" Image_File=".imgs/rfid-tags.png" />
+
+<item itemtype="Push" CircId="Push-51" mainComp="false" Show_id="true" Show_Val="false" Pos="-152,976" rotation="0" hflip="1" vflip="1" label="tagA" idLabPos="-9.14607,21.9213" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="AudioOut" CircId="AudioOut-52" mainComp="false" Show_id="false" Show_Val="false" Pos="56,912" rotation="0" hflip="1" vflip="1" label="AudioOut-52" idLabPos="-20,-36" labelrot="0" valLabPos="-16,20" valLabRot="0" Buzzer="true" Impedance="8 Ω" Frequency="1 kHz" />
+
+<item itemtype="Subcircuit" CircId="Nano-53" mainComp="false" Show_id="true" Show_Val="false" Pos="-248,820" rotation="90" hflip="1" vflip="1" label="Nano-53" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0">
+<mainCompProps MainCompId="m328 TQFP-269" Frequency="16 MHz" Program="RDM6300RF_module_emulator.hex" Auto_Load="false" saveEepr="true" MainMcu="false" SerialMon="-1" />
+</item>
+
+<item itemtype="Image" CircId="Image-54" mainComp="false" Show_id="false" Show_Val="false" Pos="-176,1008" rotation="0" hflip="1" vflip="1" label="Image-54" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="32 _px" V_size="32 _px" Border="0 _px" Z_Value="-1" Color="#a0a0a4" Opacity="0" Image_File=".imgs/rfid-tags.png" />
+
+<item itemtype="Image" CircId="Image-56" mainComp="false" Show_id="false" Show_Val="false" Pos="-288,1008" rotation="0" hflip="1" vflip="1" label="Image-56" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="32 _px" V_size="32 _px" Border="0 _px" Z_Value="-1" Color="#a0a0a4" Opacity="0" Image_File=".imgs/rfid-tags.png" />
+
+<item itemtype="Push" CircId="Push-57" mainComp="false" Show_id="true" Show_Val="false" Pos="-260,976" rotation="0" hflip="1" vflip="1" label="tagC" idLabPos="-11.8101,20.5506" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="TextComponent" CircId="TextComponent-58" mainComp="false" Show_id="false" Show_Val="false" Pos="252,712" rotation="0" hflip="1" vflip="1" label="TextComponent-58" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="10 _px" Fixed_Width="false" Text="OUTPUT" />
+
+<item itemtype="Image" CircId="Image-59" mainComp="false" Show_id="false" Show_Val="false" Pos="-36,732" rotation="0" hflip="1" vflip="1" label="Image-59" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="190 _px" V_size="165 _px" Border="2 _px" Z_Value="-1" Color="#a0a0a4" Opacity="1" Image_File=".imgs/input.jpg" />
+
+<item itemtype="Image" CircId="Image-60" mainComp="false" Show_id="false" Show_Val="false" Pos="428,724" rotation="0" hflip="1" vflip="1" label="Image-60" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="175 _px" V_size="165 _px" Border="2 _px" Z_Value="-1" Color="#a0a0a4" Opacity="1" Image_File=".imgs/output.jpg" />
+
+<item itemtype="Node" CircId="Node-18" mainComp="false" Pos="244,948" />
+
+<item itemtype="Node" CircId="Node-20" mainComp="false" Pos="280,948" />
+
+<item itemtype="Node" CircId="Node-46" mainComp="false" Pos="-260,956" />
+
+<item itemtype="Node" CircId="Node-55" mainComp="false" Pos="-224,956" />
+
+<item itemtype="Connector" uid="Connector-58" startpinid="Nano-8-12" endpinid="Push-12-switch0pinN" pointList="236,864,236,852,208,852,208,924,372,924,372,968,368,968" />
+
+<item itemtype="Connector" uid="Connector-59" startpinid="Nano-8-11" endpinid="Push-11-switch0pinN" pointList="244,864,244,844,204,844,204,932,316,932,316,968,312,968" />
+
+<item itemtype="Connector" uid="Connector-60" startpinid="Nano-8-10" endpinid="Push-10-switch0pinN" pointList="252,864,252,836,196,836,196,940,260,940,260,968" />
+
+<item itemtype="Connector" uid="Connector-63" startpinid="Nano-8-3V3" endpinid="Node-18-0" pointList="244,912,244,948" />
+
+<item itemtype="Connector" uid="Connector-64" startpinid="Node-18-2" endpinid="Push-10-pinP0" pointList="244,948,220,948,220,968,228,968" />
+
+<item itemtype="Connector" uid="Connector-68" startpinid="Push-12-pinP0" endpinid="Node-20-1" pointList="336,968,336,948,280,948" />
+
+<item itemtype="Connector" uid="Connector-69" startpinid="Push-11-pinP0" endpinid="Node-20-0" pointList="280,968,280,948" />
+
+<item itemtype="Connector" uid="Connector-70" startpinid="Node-20-2" endpinid="Node-18-1" pointList="280,948,244,948" />
+
+<item itemtype="Connector" uid="Connector-113" startpinid="Nano-8-GND0" endpinid="Uno-1-GND2" pointList="324,864,324,828,480,828,480,840" />
+
+<item itemtype="Connector" uid="Connector-114" startpinid="Nano-8-3" endpinid="Uno-1-11" pointList="308,864,308,820,504,820,504,840" />
+
+<item itemtype="Connector" uid="Connector-115" startpinid="Uno-1-0" endpinid="SerialPort-2-pin0" pointList="600,840,600,820,644,820,644,824" />
+
+<item itemtype="Connector" uid="Connector-116" startpinid="Uno-1-1" endpinid="SerialPort-2-pin1" pointList="592,840,592,816,628,816,628,824" />
+
+<item itemtype="Connector" uid="Connector-119" startpinid="AudioOut-38-rPin" endpinid="Uno-1-GND1" pointList="544,904,528,904,528,984" />
+
+<item itemtype="Connector" uid="Connector-120" startpinid="AudioOut-38-lPin" endpinid="Uno-1-12" pointList="544,896,496,896,496,840" />
+
+<item itemtype="Connector" uid="Connector-121" startpinid="Nano-53-GND0" endpinid="Uno-44-GND2" pointList="-180,872,-180,836,-24,836,-24,848" />
+
+<item itemtype="Connector" uid="Connector-122" startpinid="Nano-53-12" endpinid="Push-51-switch0pinN" pointList="-268,872,-268,860,-296,860,-296,932,-132,932,-132,976,-136,976" />
+
+<item itemtype="Connector" uid="Connector-123" startpinid="Nano-53-10" endpinid="Push-57-switch0pinN" pointList="-252,872,-252,844,-308,844,-308,948,-244,948,-244,976" />
+
+<item itemtype="Connector" uid="Connector-124" startpinid="Nano-53-11" endpinid="Push-45-switch0pinN" pointList="-260,872,-260,852,-300,852,-300,940,-188,940,-188,976,-192,976" />
+
+<item itemtype="Connector" uid="Connector-125" startpinid="Uno-44-0" endpinid="SerialPort-47-pin0" pointList="96,848,96,828,140,828,140,832" />
+
+<item itemtype="Connector" uid="Connector-126" startpinid="Node-46-2" endpinid="Push-57-pinP0" pointList="-260,956,-284,956,-284,976,-276,976" />
+
+<item itemtype="Connector" uid="Connector-127" startpinid="Nano-53-3" endpinid="Uno-44-11" pointList="-196,872,-196,828,0,828,0,848" />
+
+<item itemtype="Connector" uid="Connector-128" startpinid="Nano-53-3V3" endpinid="Node-46-0" pointList="-260,920,-260,956" />
+
+<item itemtype="Connector" uid="Connector-129" startpinid="AudioOut-52-lPin" endpinid="Uno-44-12" pointList="40,904,-8,904,-8,848" />
+
+<item itemtype="Connector" uid="Connector-130" startpinid="Uno-44-1" endpinid="SerialPort-47-pin1" pointList="88,848,88,824,124,824,124,832" />
+
+<item itemtype="Connector" uid="Connector-131" startpinid="Push-51-pinP0" endpinid="Node-55-1" pointList="-168,976,-168,956,-224,956" />
+
+<item itemtype="Connector" uid="Connector-132" startpinid="AudioOut-52-rPin" endpinid="Uno-44-GND1" pointList="40,912,24,912,24,992" />
+
+<item itemtype="Connector" uid="Connector-133" startpinid="Push-45-pinP0" endpinid="Node-55-0" pointList="-224,976,-224,956" />
+
+<item itemtype="Connector" uid="Connector-134" startpinid="Node-55-2" endpinid="Node-46-1" pointList="-224,956,-260,956" />
+
+</circuit>
