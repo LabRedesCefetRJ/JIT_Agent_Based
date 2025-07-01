@@ -1,8 +1,7 @@
 myUUID("2d3f8133-c4dd-47fe-be75-49494fd5f06d").
-gateway("10.0.3.9", 5500).
-
-chainServer("http://testchain.chon.group:9984/").
-cryptocurrency("cfc4c2a63e888523249ea3d0fba1575106b944292b3ae2d6e3a0f880ca86442c").
+gateway("skynet.chon.group", 5500).					//public server
+chainServer("http://testchain.chon.group:9984/").	//public server
+cryptocurrency("0a73dc0f45cc7b4584d07385c114ff54a78f9d341be798e32c12277b3a287b1b").
 
 produtoValor(286331153,33).
 produtoValor(572662306,32).
@@ -17,10 +16,7 @@ ultimoPedido(0).
 	.connectCN(Gateway,Port,UUID);
 	.velluscinum.loadWallet(myWallet);
 	.wait(myWallet(P,Q));
-	.velluscinum.walletContent(S,P,Q,wallet);
-	//.velluscinum.stampTransaction("http://testchain.chon.group:9984/","8Gj9WTcEWMNmmbE2mdFRakbVotDpPCE3Jsjuz7fE1pDT","7mZEAyhV9ZT8JEepk2fPxm4AyMj2sDuVgtqS6CEgSgjy","640299b17e8c44d94a89168fbb33d284dd26b3cb4dc6c70a9455420429c1f995").
-		//.velluscinum.stampTransaction(S,P,Q,Payment);
-.
+	.velluscinum.walletContent(S,P,Q,wallet).		//https://github.com/chon-group/Velluscinum/wiki/walletContent-Internal-Action
 
 +!consultarProduto(Tag)[source(Cliente)]: produtoValor(Tag,Value) <-
 	?myWallet(Priv,PublicKey);
@@ -32,5 +28,5 @@ ultimoPedido(0).
 	NrPedido=N+1;
 	-+ultimoPedido(NrPedido);
 	.print("Recebi pedido ", NrPedido);
-	.velluscinum.stampTransaction(S,P,Q,CodPix);
+	.velluscinum.stampTransaction(S,P,Q,CodPix);	//https://github.com/chon-group/Velluscinum/wiki/stampTransaction-Internal-Action
 	.sendOut(Cliente, achieve, recebimento(Qtd,Produto)).

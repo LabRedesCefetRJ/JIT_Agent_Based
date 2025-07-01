@@ -1,7 +1,7 @@
 fornecedor("2d3f8133-c4dd-47fe-be75-49494fd5f06d").
 chainServer("http://testchain.chon.group:9984/").
 myUUID("13a0014e-0980-4420-b497-587816c76c93").
-gateway("10.0.3.9", 5500).
+gateway("skynet.chon.group", 5500).
 cryptocurrency("cfc4c2a63e888523249ea3d0fba1575106b944292b3ae2d6e3a0f880ca86442c").
 
 !start.
