@@ -49,6 +49,3 @@ xterm -T "Fornecedor Multi-agent System" -e ./runMAS.sh &
 sleep 3
 cd ../mercado/
 xterm -T "Mercado Multi-agent System" -e ./runMAS.sh &
-echo "BusPoint MAS Started..."
-sleep 3
-

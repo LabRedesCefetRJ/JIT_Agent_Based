@@ -22,4 +22,6 @@ clear
 MSG="Executing the MAS in 10 seconds (Start the simulation)"
 sleep 2; clear; echo -n $MSG".."; sleep 2; clear; echo -n $MSG"...."; sleep 2; clear; echo -n $MSG"......"; sleep 2; clear; echo  $MSG"........."
 
+echo "Press ENTER to start the MAS...."
+read
 jason MAS/raulMercado.mas2j
