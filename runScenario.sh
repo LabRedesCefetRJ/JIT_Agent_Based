@@ -37,7 +37,9 @@ FORNECEDORSALDO=`velluscinum walletBalance http://testchain.chon.group:9984 $FOR
 if [[ -n "$FORNECEDORSALDO" ]]; then
     echo "Transfering $FORNECEDORSALDO agentsCoin to SUPERMERCADO Wallet"
     #see: https://github.com/chon-group/Velluscinum/wiki/transferToken-CLI
-    echo "velluscinum transferToken $BigChainDBServer $FORNECEDORPrivK $FORNECEDORPublK $TOKEN $MERCADOPubkK $FORNECEDORSALDO"
+    velluscinum transferToken $BigChainDBServer $FORNECEDORPrivK $FORNECEDORPublK $TOKEN $MERCADOPubkK $FORNECEDORSALDO
+else
+    echo "Saldo = $FORNECEDORSALDO"
 fi
 
 echo "Starting Simulation..."
