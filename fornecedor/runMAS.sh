@@ -13,4 +13,4 @@ else
     echo "The computer has Jason and Velluscinum"
 fi
 
-jason raulFornecedor.mas2j
+jason MAS/raulFornecedor.mas2j
