@@ -1,5 +1,5 @@
 #! /bin/bash
-FRAMEWORK="/usr/bin/jasonEmbedded"
+FRAMEWORK="/usr/bin/jason"
 SIMULIDE="/opt/group.chon/simulide/simulide"
 SERIALPORT="/dev/ttyEmulatedPort0"
 MIDDLEWARE="/usr/bin/velluscinum"
