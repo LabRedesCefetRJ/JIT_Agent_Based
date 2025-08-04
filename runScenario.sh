@@ -38,8 +38,6 @@ if [[ -n "$FORNECEDORSALDO" ]]; then
     echo "Transfering $FORNECEDORSALDO agentsCoin to SUPERMERCADO Wallet"
     #see: https://github.com/chon-group/Velluscinum/wiki/transferToken-CLI
     velluscinum transferToken $BigChainDBServer $FORNECEDORPrivK $FORNECEDORPublK $TOKEN $MERCADOPubkK $FORNECEDORSALDO
-else
-    echo "Saldo = $FORNECEDORSALDO"
 fi
 
 echo "Starting Simulation..."
